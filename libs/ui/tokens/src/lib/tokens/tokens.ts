@@ -1,4 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'lib-tokens',
@@ -6,5 +10,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './tokens.html',
   styleUrl: './tokens.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class Tokens {}
