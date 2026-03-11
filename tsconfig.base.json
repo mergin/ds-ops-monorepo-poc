@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ds-ops-monorepo-poc/tokens": ["libs/ui/tokens/src/index.ts"],
+      "@ds-ops-monorepo-poc/primitives": ["libs/ui/primitives/src/index.ts"],
+      "@ds-ops-monorepo-poc/customers": ["libs/state/customers/src/index.ts"],
+      "@ds-ops-monorepo-poc/api-client": [
+        "libs/data-access/api-client/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
